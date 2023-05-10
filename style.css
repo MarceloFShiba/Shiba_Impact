@@ -1,0 +1,399 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&display=swap');
+
+* {
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+    text-decoration: none;   
+}
+:root {
+    --cor-texto-main-home: #DAA520;
+    --cor-texto-links:#F2FA07;
+    --cor-texto-fimpagina:#FFFFFF;
+    --cor-background-dias:#D9D9D9;
+    --cor-background-main-home:#778899;
+    --cor-background-main-home2:#778899;
+    --cor-background-fimpagina:#9313E7;
+    --font-main-home:'Inika';
+    --font-main-home2:Arial, Helvetica, sans-serif;
+    --font-links:'Montserrat', sans-serif;
+    --cor-borda-main-home: #DAA520;
+    --cor-stroke-main-home:#DAA520;
+    --cor-stroke-main-links:#000000;
+}
+
+body {
+    background-image: url(../imagens/1163981.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(../imagens/background.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+    width: 100%;  
+}
+
+.botao_home {    
+width: 80%;
+}
+main{
+display: flex;
+flex-direction: column;
+padding: 1%;
+}
+.armas{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.materiais_armas_talentos{
+    font-family: var(--font-main-home);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;    
+    color: var(--cor-texto-main-home);    
+    width: 60%;
+    background: var(--cor-background-main-home);
+    border: 5px solid var(--cor-borda-main-home);
+    border-radius: 20px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.dias{
+    background-color: var(--cor-background-dias);
+    width: 90%;
+    padding: 1%;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 900;
+    -webkit-text-stroke-color: var(--cor-stroke-main-links);
+    -webkit-text-stroke-width: 1px; 
+}
+ .item_arma {
+    width: 20%;
+} 
+
+.coluna_dias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    background-color: var(--cor-background-dias);
+    width: 90%;
+    border-radius: 100px;
+    align-items: center;
+}
+.materiais_armas_1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: var(--font-main-home2);
+    font-size: 1rem;
+    color: var(--cor-texto-main-home);
+    border: 5px solid var(--cor-borda-main-home);
+    padding: 1%;   
+    width: 70%;
+    background: var(--cor-background-main-home2);
+    border-radius: 50px;
+}
+.materiais_armas_2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;  
+}
+.materiais_armas_3{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    justify-content: space-around;
+}
+.talentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.materiais_talentos_1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-main-home2);
+    font-size: 1rem;
+    color: var(--cor-texto-main-home);
+    border: 5px solid var(--cor-borda-main-home);
+    padding: 1%;   
+    width: 70%;
+    background: var(--cor-background-main-home2);
+    border-radius: 50px;    
+}
+
+.materiais_talentos_2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;  
+}
+
+.materiais_talentos_3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    justify-content: space-around;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}       
+.links{
+    width: 100%;
+    background-image:url(../imagens/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 5px;     
+}
+
+.botao_calculadora{
+    width: 100%;
+    background-image: url(../imagens/calculadora_de_dano_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;
+
+}
+
+.botao_mapa{
+    width: 100%;
+    background-image: url(../imagens/mapa_interativo_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;  
+}
+
+.botao_abismo{
+    width: 100%;
+    background-image:url(../imagens/abismo_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;
+}
+
+.botao_web{
+    width: 100%;
+    background-image: url(../imagens/web_login_diario_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem; 
+}
+
+.botao_akasha{
+    width: 100%;
+    background-image: url(../imagens/Akasha_System_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;
+}
+
+.botao_enka{
+    width: 100%;
+    background-image: url(../imagens/enka.network_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;   
+}
+
+.botao_twitter{
+    width: 100%;
+    background-image: url(../imagens/twitter_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;  
+}
+.botao_lives{
+    width: 100%;
+    background-image: url(../imagens/lives_botao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3.5rem;
+}
+
+.botao_cima{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.botao_baixo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 2%;
+    justify-content: space-around;
+    width: 100%; 
+}
+.tttt{
+    color: var(--cor-texto-links);
+    -webkit-text-stroke-color: var(--cor-stroke-main-links);
+    -webkit-text-stroke-width: 1px;
+    padding-top: 1%;
+    padding-left: 20%;
+    font-size: 1.5rem;
+    font-family: var(--font-links);
+}
+
+.fim_pagina {       
+    font-family: var(--font-main-home);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    align-items: center;
+    text-align: center; 
+    color: var(--cor-texto-fimpagina);
+    padding-top: 1%;
+    padding-bottom: 1%;    
+    width: 100%;
+    background-color: var(--cor-background-fimpagina);
+}
+
+button :hover {
+    background-image: url(../imagens/nahida_nerdola.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+@media screen and (max-width: 1400px){
+    .botao_cima{
+        flex-direction: column;
+    }
+    .botao_baixo{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
+    .materiais_armas_2{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .materiais_armas_3{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .materiais_talentos_2{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .materiais_talentos_3{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .item_arma{
+        width: 10%;
+    }
+    .coluna_dias{
+        flex-direction: row;
+        font-size: 14px;
+    }
+    .materiais_armas_1{
+        width: 100%;
+    }
+    .materiais_talentos_1{
+        width: 100%;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .materiais_armas_2{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .materiais_armas_3{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .materiais_talentos_2{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .materiais_talentos_3{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .item_arma{
+        width: 10%;
+    }
+    .coluna_dias{
+        flex-direction: row;
+        font-size: 10px;
+    }
+    .materiais_armas_1{
+        width: 100%;
+    }
+    .materiais_talentos_1{
+        width: 100%;
+    }
+    .materiais_armas_talentos{
+        width: 100%;
+    } 
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
