@@ -288,6 +288,175 @@ button :hover {
     background-size: cover;
     height: 100%;
 }
+/* RAIDEN SHOGUN */
+.cabecalhos{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho2{
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../imagens/cabeçalho.png); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    align-items: center;
+     
+}
+.botao_home2{
+    font-size: 3rem;
+    font-weight: 400;
+    width: 100%; 
+    color: #4D0741;
+    -webkit-text-stroke-color: #9F508E;
+    -webkit-text-stroke-width: 1px;
+}
+
+.main_personagem{
+    width: 100%;
+}
+
+.main_tabela{
+    width: 90%;
+    padding-left: 10%;
+
+}
+.personagem{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: #9313E7;
+    color: #D9D9D9;
+}
+.ficha{
+    text-align: center;
+    
+}
+.rowspan{
+    width: 20%;
+    background-color:#DAA520;
+}
+.raiden{
+    width: 90%;
+    padding: 5%;
+}
+
+.personagem1{
+    background-color:#FFFFFF;
+    width: 15%;
+    border-radius: 10px;
+}
+.personagem2{
+    background-color: #A52828;
+    width: 50%;
+    border-radius: 10px;
+
+}
+.estrela{
+    color: #DAA520;
+}
+.icones{
+    width: 20px;
+    height: 20px;
+}
+
+.tabela{
+    width: 100%;
+}
+.status{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.status1{
+    margin-bottom: 1%;
+    background-color: gray;
+    color: #FFFFFF;
+}
+.status2{
+    background-color: #DAA520;
+    text-align: center;
+    color: #FFFFFF;
+}
+.status3{
+    background-color: #9313E7;
+    text-align: center;
+    color: #FFFFFF;
+}
+.status4{
+    background-color: gray; 
+}
+
+.statusprincipal{
+    background-color: #A52828;
+}
+.passiva{
+    background-color: aqua;
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.passiva1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-left: 1%;
+    justify-content: center;
+}
+.passiva2{
+    background-color: #DAA520;
+    text-align: center;
+    color: #FFFFFF;
+    width: 45%; 
+}
+.passiva3{
+    background-color: red;
+    text-align: center;
+    color: #FFFFFF;
+    width: 45%;
+}
+.destaque{
+    color: black;
+    font-weight: 900;
+}
+.gemas{
+    width: 20%;
+    background-color:#9313E7;
+    padding: 1%;
+}
+.gemas1{
+    width: 20%;
+    background-color:#DAA520;
+    padding: 1%;
+}
+
+.tabela_head{
+    background-color: blue;
+    color: white;
+}
+.tabela_ascensao{
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.tabela_ascensaomaterial{
+    text-align: center;
+    background-color: green;
+    margin-top: 1%;
+}
+.itemascensao{
+    width: 20%;
+    padding: 1%;
+}
+.itemascensao1{
+    width: 10px;
+    padding: 1%;  
+}
+
+
+
 @media screen and (max-width: 1400px){
     .botao_cima{
         flex-direction: column;
@@ -295,6 +464,17 @@ button :hover {
     .botao_baixo{
         flex-direction: column;
     }
+}
+@media screen and (max-width: 940px) {
+    .cabecalho2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: url(../imagens/cabeçalho.png);
+        background-size:cover;
+        background-position: 50%;
+        height: 100%;
+    }    
 }
 @media screen and (max-width: 800px) {
     .materiais_armas_2{
@@ -329,7 +509,22 @@ button :hover {
     }
     .materiais_talentos_1{
         width: 100%;
-    }  
+    }
+}
+@media screen and (max-width:600px){
+    .tabela_head{
+        font-size: 8px;
+     }
+     .status2{
+        font-size: 8px;
+     }
+     .status3{
+        font-size: 8px;
+     }
+     .ficha{
+        font-size: 10px;
+     }
+     
 }
 
 @media screen and (max-width: 500px) {
@@ -368,8 +563,10 @@ button :hover {
     }
     .materiais_armas_talentos{
         width: 100%;
-    } 
+    }
 }
+
+
 
     
 
