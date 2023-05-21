@@ -337,6 +337,7 @@ button :hover {
 .rowspan{
     width: 20%;
     background-color:#DAA520;
+    border-radius: 12%;
 }
 .raiden{
     width: 90%;
@@ -454,16 +455,65 @@ button :hover {
     width: 10px;
     padding: 1%;  
 }
+/* ARMAS */
+.armas_personagens{
+    display: flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    gap: 1%;
+
+}
+.armas_personagens1{
+    width: 100%;
+    height: 700px;
+    background-color: red;
+    border: solid #000000 1px;
+    border-radius: 20px;
+}
+.armas_personagens_estrelas{
+    display: flex;
+    background-color: #778899;
+    border: solid #000000;
+    border-radius: 20px;
+    margin: 1px;
+    padding: 1%;
+    justify-content: center;
+}
+.tabela_armas{
+    width: 90%;
+    margin: 1%;
+    border: solid black;
+}
+.tabela_head_armas{
+    color: #FFFFFF;
+    background-color: #9313E7;
+    text-align: center;
+    font-size: 16px; /* resposivel 10px */
+}
+.tabela_head_armas1{
+    color: #778899;
+    background-color: #A52828;
+    font-size: 14px;
+}
+.armas_icon{
+    width: 80%;
+}
 
 
 
-@media screen and (max-width: 1400px){
+
+
+
+
+@media screen and (max-width: 1350px){
     .botao_cima{
         flex-direction: column;
     }
     .botao_baixo{
         flex-direction: column;
     }
+
 }
 @media screen and (max-width: 940px) {
     .cabecalho2{
@@ -473,6 +523,16 @@ button :hover {
         background-image: url(../imagens/cabeçalho.png);
         background-size:cover;
         background-position: 50%;
+        height: 100%;
+    }
+    .armas_personagens{
+        display: flex;
+        flex-direction: column;
+    }
+    .tabela_head_armas{
+        font-size: 12px;
+    }
+    .armas_personagens1{
         height: 100%;
     }    
 }
