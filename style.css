@@ -1,5 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');
 
 * {
     margin:  0;
@@ -11,16 +14,22 @@
     --cor-texto-main-home: #DAA520;
     --cor-texto-links:#F2FA07;
     --cor-texto-fimpagina:#FFFFFF;
-    --cor-background-dias:#D9D9D9;
+    --cor-texto-pagina:#FFFFFF;
+    --cor-background1: #DAA520;
     --cor-background-main-home:#778899;
     --cor-background-main-home2:#778899;
     --cor-background-fimpagina:#9313E7;
+    --cor-background-tabela:#A52828;
     --font-main-home:'Inika';
     --font-main-home2:Arial, Helvetica, sans-serif;
+    --font-home-tabela: 'Playfair', serif;
     --font-links:'Montserrat', sans-serif;
+    --font-ficha:'Oxygen', sans-serif;
+    --font-artefatos-constelacoes:'Prompt', sans-serif;
     --cor-borda-main-home: #DAA520;
     --cor-stroke-main-home:#DAA520;
     --cor-stroke-main-links:#000000;
+    --cor-stroke-botaohome2:#9F508E;
 }
 
 body {
@@ -59,107 +68,27 @@ padding: 1%;
  flex-direction: column;
  align-items: center;
 }
-
-.materiais_armas_talentos{
-    font-family: var(--font-main-home);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    text-align: center;    
-    color: var(--cor-texto-main-home);    
-    width: 60%;
-    background: var(--cor-background-main-home);
-    border: 5px solid var(--cor-borda-main-home);
-    border-radius: 20px;
-    margin-bottom: 1%;
-    margin-top: 1%;
-}
-.dias{
-    background-color: var(--cor-background-dias);
-    width: 90%;
-    padding: 1%;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 900;
-    -webkit-text-stroke-color: var(--cor-stroke-main-links);
-    -webkit-text-stroke-width: 1px; 
-}
- .item_arma {
-    width: 20%;
-} 
-
-.coluna_dias{
+.tscroll1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 2%;
-    background-color: var(--cor-background-dias);
-    width: 90%;
-    border-radius: 100px;
-    align-items: center;
+    font-family: var(--font-home-tabela);
 }
-.materiais_armas_1{
+.tscroll2{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    font-family: var(--font-main-home2);
-    font-size: 1rem;
-    color: var(--cor-texto-main-home);
-    border: 5px solid var(--cor-borda-main-home);
-    padding: 1%;   
-    width: 70%;
-    background: var(--cor-background-main-home2);
-    border-radius: 50px;
+    overflow-x:hidden;
+    font-family: var(--font-home-tabela);
 }
-.materiais_armas_2{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;  
+.tscroll2::-webkit-scrollbar{
+    background-color: var(--cor-background1);
+    height: 30px;
 }
-.materiais_armas_3{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    justify-content: space-around;
-}
-.talentos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
-}
-.materiais_talentos_1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-family: var(--font-main-home2);
-    font-size: 1rem;
-    color: var(--cor-texto-main-home);
-    border: 5px solid var(--cor-borda-main-home);
-    padding: 1%;   
-    width: 70%;
-    background: var(--cor-background-main-home2);
-    border-radius: 50px;    
+.tscroll2::-webkit-scrollbar-thumb{
+    background-image: url(/imagens/cosmoscatpain.png);
+    background-size: 5%;
+    background-position: 5%;
 }
 
-.materiais_talentos_2{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;  
-}
-
-.materiais_talentos_3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    justify-content: space-around;
-}
 footer{
     display: flex;
     flex-direction: column;
@@ -309,7 +238,7 @@ button :hover {
     font-weight: 400;
     width: 100%; 
     color: #4D0741;
-    -webkit-text-stroke-color: #9F508E;
+    -webkit-text-stroke-color: var(--cor-stroke-botaohome2);
     -webkit-text-stroke-width: 1px;
 }
 
@@ -335,7 +264,7 @@ button :hover {
 }
 .rowspan{
     width: 20%;
-    background-color:#DAA520;
+    background-color:var(--cor-background1);
     border-radius: 12%;
 }
 .raiden{
@@ -345,13 +274,18 @@ button :hover {
 
 .personagem1{
     background-color:#FFFFFF;
+    font-family: var(--font-ficha);
     width: 15%;
     border-radius: 10px;
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
+    -webkit-text-stroke-width: 1px;
 }
 .personagem2{
-    background-color: #A52828;
+    background-color:var(--cor-background-tabela);
     width: 50%;
     border-radius: 10px;
+    font-family: var(--font-ficha);
+    
 
 }
 .estrela{
@@ -373,27 +307,28 @@ button :hover {
 .status1{
     margin-bottom: 1%;
     background-color: gray;
-    color: #FFFFFF;
+    color: var(--cor-texto-pagina);
 }
 .status2{
-    background-color: #DAA520;
+    background-color: var(--cor-background1);
     text-align: center;
-    color: #FFFFFF;
+    color: var(--cor-texto-pagina);
 }
 .status3{
     background-color: #9313E7;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--cor-texto-pagina);
 }
 .status4{
-    background-color: gray; 
+    background-color:gray;
+    color: var(--cor-texto-pagina);
 }
 
 .statusprincipal{
-    background-color: #A52828;
+    background-color:var(--cor-background-tabela);
 }
 .passiva{
-    background-color: aqua;
+    background-color: gray;
     text-align: center;
     margin-top: 1%;
     margin-left: 1%;
@@ -406,20 +341,26 @@ button :hover {
     justify-content: center;
 }
 .passiva2{
-    background-color: #DAA520;
+    background-color: var(--cor-background-tabela);
     text-align: center;
-    color: #FFFFFF;
-    width: 45%; 
+    color: var(--cor-texto-pagina);
+    width: 45%;
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
+    -webkit-text-stroke-width: 1px;
 }
 .passiva3{
-    background-color: red;
+    background-color: purple;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--cor-texto-pagina);
     width: 45%;
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
+    -webkit-text-stroke-width: 1px;
 }
 .destaque{
     color: black;
     font-weight: 900;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
 }
 .gemas{
     width: 20%;
@@ -428,13 +369,13 @@ button :hover {
 }
 .gemas1{
     width: 20%;
-    background-color:#DAA520;
+    background-color: var(--cor-background1);
     padding: 1%;
 }
 
 .tabela_head{
-    background-color: blue;
-    color: white;
+    background-color: var(--cor-background1);
+    color: var(--cor-texto-pagina);
 }
 .tabela_ascensao{
     text-align: center;
@@ -443,7 +384,7 @@ button :hover {
 }
 .tabela_ascensaomaterial{
     text-align: center;
-    background-color: green;
+    background-color: var(--cor-background-main-home);
     margin-top: 1%;
 }
 .itemascensao{
@@ -464,7 +405,7 @@ button :hover {
 }
 .armas_personagens1{
     width: 100%;
-    background-color: red;
+    background-color: #a55dc78e;
     border: solid #000000 1px;
     border-radius: 20px;
 }
@@ -483,14 +424,14 @@ button :hover {
     border: solid black;
 }
 .tabela_head_armas{
-    color: #FFFFFF;
+    color: var(--cor-texto-pagina);
     background-color: #9313E7;
     text-align: center;
     font-size: 16px; 
 }
 .tabela_head_armas1{
-    color: #778899;
-    background-color: #A52828;
+    color: var(--cor-texto-pagina);
+    background-color: var(--cor-background-tabela);
     font-size: 14px;
 }
 .armas_icon{
@@ -505,7 +446,7 @@ button :hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color:gray;
+    background-color:gold;
 }
 .tabela_artefatos{
     margin-top: 1%;
@@ -514,13 +455,16 @@ button :hover {
     margin-right: 2%;
 }
 .tabela_head_artefatos{
-    color: #FFFFFF;
-    background-color: #9F508E;
+    color: var(--cor-texto-pagina);
+    background-color: var(--cor-background-main-home);
     text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 .artefatos_icon{
     width: 10%;
-    background-color: #DAA520;
+    background-color: var(--cor-background1);
+    font-family: var(--font-artefatos-constelacoes);
 }
 .artefatos_status{
     width: 30%;
@@ -545,7 +489,7 @@ button :hover {
 }
 .constelacoes_personagens1{
     width: 100%;
-    background-color: blue;
+    background-color: gold;
     border: solid #000000 1px;
     border-radius: 20px;
     padding: 1%;
@@ -555,7 +499,7 @@ button :hover {
 }
 .tabela_head_constelacoes{
     color: gold;
-    background-color: gray;
+    background-color: var(--cor-background-main-home);
     text-align: center;
     font-size: 28px; 
 }
@@ -564,14 +508,14 @@ button :hover {
     background-color: purple;
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: var(--cor-texto-pagina);
 }
 .tabela_constelacoes{
     width:100%;
     border: solid black 3px;
 }
 .constelacao_cor_texto{
-    color: #DAA520;
+    color: var(--cor-background1);
     font-weight: 900;
     font-size: 24px;
 }
@@ -586,10 +530,10 @@ button :hover {
     width: 100%;
 }
 .nota{
-    background-color: #DAA520;
+    background-color: var(--cor-background1);
     font-size: 28px;
     font-weight: bolder;
-    color: #9313E7;
+    color: black;
     text-align: center;
 }
 .skin_image{
@@ -604,8 +548,8 @@ button :hover {
     width: 100%;
 }
 .creditos{
-    background-color: #A52828;
-    font-size: 24px;
+    background-color: var(--cor-background-tabela);
+    font-size: 1.5rem;
     text-align: center;
     border-radius: 20px;
     width: 100%;
@@ -620,7 +564,7 @@ button :hover {
     flex-direction: column;
     text-align: center;
     border-radius: 20px;
-    background-color: #FFFFFF;
+    background-color: #00000075;
     padding: 1%;
     margin-top: 10px;
 }
@@ -637,7 +581,7 @@ button :hover {
 
 }
 .cor4{
-    background-color: #DAA520;
+    background-color: var(--cor-background1);
     padding: 1%;
     border-radius: 20px;
     margin-top: 10px;
@@ -652,12 +596,12 @@ button :hover {
 }
 
 .cor7{
-    background-color: #778899;
+    background-color:var(--cor-background-main-home);  
     padding: 1%;
     border-radius: 20px;
     font-weight: 700;
     font-size: 1.5rem;
-    -webkit-text-stroke-color: #DAA520;
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
 }
 .tscroll{
@@ -666,7 +610,7 @@ button :hover {
     overflow-x:hidden;
 }
 .tscroll::-webkit-scrollbar{
-    background-color: #DAA520;
+    background-color: var(--cor-background1);
     height: 30px;
 }
 .tscroll::-webkit-scrollbar-thumb{
@@ -676,8 +620,8 @@ button :hover {
 }
 
 .cor8{
-    background-color: gray;
-    color: black;
+    background-color: var(--cor-background-main-home);  
+    color: #000000;
     font-weight: 700;
     text-align: center;
     padding: 1%;
@@ -686,12 +630,12 @@ button :hover {
     margin-bottom: 10px;
 }
 .cor9_1{
-    background-color: #A52828;
+    background-color: var(--cor-background-tabela);
 }
 .cor9_1_1{
-    background-color: #A52828;
-    color: #D9D9D9;
-    -webkit-text-stroke-color: #DAA520;
+    background-color: var(--cor-background-tabela);
+    color: var(--cor-texto-pagina);
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
 }
 .cor9{
@@ -699,8 +643,8 @@ button :hover {
 }
 .cor10{
     background-color: blueviolet;
-    color: #D9D9D9;
-    -webkit-text-stroke-color: #DAA520;
+    color: var(--cor-texto-pagina);
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
 }
 .cor11{
@@ -710,35 +654,35 @@ button :hover {
     background-repeat: no-repeat;
 }
 .Honey{
-    color: #DAA520;
+    color: var(--cor-background1);
     font-weight: bolder;
     text-decoration:underline;
 }
 /*TIMES */
 .cor4_1{
-    background-color: #DAA520;
+    background-color: var(--cor-background1);
     padding: 1%;
     border-radius: 20px;
     margin-top: 10px;
 }
 .cor5_1{
-    background-color: pink;
+    background-color: var(--cor-background-main-home);
     text-align: center;
     border-radius: 20px;
     padding: 1%;
     font-size: 1rem;
     font-weight: 500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    -webkit-text-stroke-color: #DAA520;
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
 }
 .cor6_1{
-    background-color: gray;
-    -webkit-text-stroke-color: #DAA520;
+    background-color: var(--cor-background-main-home);
+    -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
     border-radius: 20px;
     padding: 1%;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 500;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
@@ -750,9 +694,9 @@ button :hover {
 
 @media screen and (max-width:1550px){
     .tabela_head_armas1{
-        color: white;
+        color: var(--cor-texto-pagina);
         font-size: 12px;
-        background-color:#A52828; 
+        background-color:var(--cor-background-tabela); 
     }
     .armas_personagens{
         display: flex;
@@ -862,7 +806,7 @@ button :hover {
      }
      .ficha{
         font-size: 10px;
-     }    
+     }   
 }
 @media screen and (max-width: 500px) {
     .materiais_armas_2{
@@ -901,6 +845,9 @@ button :hover {
     .materiais_armas_talentos{
         width: 100%;
     }
+    .tscroll2{
+        overflow-x:scroll;
+    } 
 }
 
 
