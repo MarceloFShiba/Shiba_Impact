@@ -70,23 +70,31 @@ padding: 1%;
 }
 .tscroll1{
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
     font-family: var(--font-home-tabela);
 }
+/* tscroll1 ainda não utilizavel */
 .tscroll2{
     display: flex;
     flex-direction: column;
     overflow-x:hidden;
     font-family: var(--font-home-tabela);
 }
+.tscroll1::-webkit-scrollbar, 
 .tscroll2::-webkit-scrollbar{
     background-color: var(--cor-background1);
     height: 30px;
 }
+.tscroll1::-webkit-scrollbar-thumb,
 .tscroll2::-webkit-scrollbar-thumb{
     background-image: url(/imagens/cosmoscatpain.png);
     background-size: 5%;
     background-position: 5%;
+}.tscroll1 td ,
+.tscroll2 td  {
+    max-lines: 2;
+    min-width: 160px;
 }
 
 footer{
@@ -335,26 +343,27 @@ button :hover {
 }
 .passiva1{
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     margin-top: 1%;
     margin-left: 1%;
     justify-content: center;
+    gap: 10px;
 }
 .passiva2{
     background-color: var(--cor-background-tabela);
     text-align: center;
     color: var(--cor-texto-pagina);
-    width: 45%;
     -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
+    padding: 1%;
 }
 .passiva3{
     background-color: purple;
     text-align: center;
     color: var(--cor-texto-pagina);
-    width: 45%;
     -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
+    padding: 1%;
 }
 .destaque{
     color: black;
@@ -377,15 +386,16 @@ button :hover {
     background-color: var(--cor-background1);
     color: var(--cor-texto-pagina);
 }
-.tabela_ascensao{
-    text-align: center;
-    padding-left: 1%;
-    padding-right: 1%;
-}
+
 .tabela_ascensaomaterial{
     text-align: center;
     background-color: var(--cor-background-main-home);
     margin-top: 1%;
+    margin-left: 1%;
+}
+.tabela_ascensao{
+    text-align: center;
+    margin-left: 1%;
 }
 .itemascensao{
     width: 20%;
@@ -709,11 +719,6 @@ button :hover {
         height: 100%;
     }
 }
-@media screen and (max-width: 1410px){
-    .tscroll{
-        overflow-x: scroll;
-    }
-}
 @media screen and (max-width: 1350px){
     .botao_cima{
         flex-direction: column;
@@ -721,10 +726,6 @@ button :hover {
     .botao_baixo{
         flex-direction: column;
     }
-    .tscroll{
-        overflow-x: scroll;
-    }
-}
 @media screen and (max-width: 1200px){
     .skins{
         display: flex;
@@ -733,6 +734,8 @@ button :hover {
     }
 }
 @media screen and (max-width:1150px){
+
+}
 
 }
 @media screen and (max-width: 940px) {
@@ -806,7 +809,11 @@ button :hover {
      }
      .ficha{
         font-size: 10px;
-     }   
+     }
+     .tscroll{
+        overflow-x: auto;
+    }
+        
 }
 @media screen and (max-width: 500px) {
     .materiais_armas_2{
@@ -845,6 +852,8 @@ button :hover {
     .materiais_armas_talentos{
         width: 100%;
     }
+    
+    .tscroll1,
     .tscroll2{
         overflow-x:scroll;
     } 
