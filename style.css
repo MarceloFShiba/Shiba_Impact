@@ -68,6 +68,20 @@ padding: 1%;
  flex-direction: column;
  align-items: center;
 }
+.tscroll{
+    display: flex;
+    flex-direction: column;
+    overflow-x:hidden;
+}
+.tscroll::-webkit-scrollbar{
+    background-color: var(--cor-background1);
+    height: 30px;
+}
+.tscroll::-webkit-scrollbar-thumb{
+    background-image: url(/imagens/cosmoscatpain.png);
+    background-size: 5%;
+    background-position: 5%;
+}
 .tscroll1{
     display: flex;
     overflow-x: hidden;
@@ -419,6 +433,17 @@ button :hover {
     border: solid #000000 1px;
     border-radius: 20px;
 }
+.armas_personagens1::-webkit-scrollbar /* isso não tava não anterior */
+{
+    background-color: var(--cor-background1);
+    height: 30px;
+}
+.armas_personagens1::-webkit-scrollbar-thumb /* isso não tava não anterior */
+{
+    background-image: url(/imagens/cosmoscatpain.png);
+    background-size: 5%;
+    background-position: 5%;
+}
 .armas_personagens_estrelas{
     display: flex;
     background-color: #778899;
@@ -614,20 +639,6 @@ button :hover {
     -webkit-text-stroke-color: var(--cor-stroke-main-home);
     -webkit-text-stroke-width: 1px;
 }
-.tscroll{
-    display: flex;
-    flex-direction: column;
-    overflow-x:hidden;
-}
-.tscroll::-webkit-scrollbar{
-    background-color: var(--cor-background1);
-    height: 30px;
-}
-.tscroll::-webkit-scrollbar-thumb{
-    background-image: url(/imagens/cosmoscatpain.png);
-    background-size: 5%;
-    background-position: 5%;
-}
 
 .cor8{
     background-color: var(--cor-background-main-home);  
@@ -813,6 +824,9 @@ button :hover {
      .tscroll{
         overflow-x: auto;
     }
+    .armas_personagens1{
+        overflow-x: auto;
+    }
         
 }
 @media screen and (max-width: 500px) {
@@ -856,7 +870,10 @@ button :hover {
     .tscroll1,
     .tscroll2{
         overflow-x:scroll;
-    } 
+    }
+    .armas_personagens1{
+        overflow-x: auto;
+    } /* isso não tava não anterior */
 }
 
 
