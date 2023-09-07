@@ -433,12 +433,12 @@ button :hover {
     border: solid #000000 1px;
     border-radius: 20px;
 }
-.armas_personagens1::-webkit-scrollbar /* isso não tava não anterior */
+.armas_personagens1::-webkit-scrollbar 
 {
     background-color: var(--cor-background1);
     height: 30px;
 }
-.armas_personagens1::-webkit-scrollbar-thumb /* isso não tava não anterior */
+.armas_personagens1::-webkit-scrollbar-thumb 
 {
     background-image: url(/imagens/cosmoscatpain.png);
     background-size: 5%;
@@ -482,6 +482,15 @@ button :hover {
     flex-direction: column;
     width: 100%;
     background-color:gold;
+}
+.artefatos_personagens1::-webkit-scrollbar 
+{
+    background-color: var(--cor-background1);
+    height: 30px;
+}
+.artefatos_personagens1::-webkit-scrollbar-thumb 
+{
+    background-color: white;
 }
 .tabela_artefatos{
     margin-top: 1%;
@@ -528,6 +537,15 @@ button :hover {
     border: solid #000000 1px;
     border-radius: 20px;
     padding: 1%;
+}
+.constelacoes_personagens1::-webkit-scrollbar 
+{
+    background-color: var(--cor-background1);
+    height: 30px;
+}
+.constelacoes_personagens1::-webkit-scrollbar-thumb 
+{
+    background-color: white;
 }
 .constelacoes_icon{
     width: 100%;
@@ -827,6 +845,12 @@ button :hover {
     .armas_personagens1{
         overflow-x: auto;
     }
+    .artefatos_personagens1{
+        overflow-x: auto;
+    }
+    .constelacoes_personagens1{
+        overflow-x: auto;
+    }
         
 }
 @media screen and (max-width: 500px) {
@@ -873,7 +897,13 @@ button :hover {
     }
     .armas_personagens1{
         overflow-x: auto;
-    } /* isso não tava não anterior */
+    }
+    .artefatos_personagens1{
+        overflow-x: auto;
+    } 
+    .constelacoes_personagens1{
+        overflow-x: auto;
+    }
 }
 
 
